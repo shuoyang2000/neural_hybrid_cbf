@@ -74,10 +74,10 @@ python train/train_acc.py --experiment_name experiment_acc --tMax 0. --tMin -1.1
 If you find this work useful, please consider citing:
 
 ```
-@article{yang2023safe,
-  title={Safe Control Synthesis for Hybrid Systems through Local Control Barrier Functions},
-  author={Yang, Shuo and Black, Mitchell and Fainekos, Georgios and Hoxha, Bardh and Okamoto, Hideki and Mangharam, Rahul},
-  journal={arXiv preprint arXiv:2311.17201},
-  year={2023}
+@article{yang2024learning,
+  title={Learning Local Control Barrier Functions for Safety Control of Hybrid Systems},
+  author={Yang, Shuo and Chen, Yu and Yin, Xiang and Mangharam, Rahul},
+  journal={arXiv preprint arXiv:2401.14907},
+  year={2024}
 }
 ```
