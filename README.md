@@ -1,5 +1,5 @@
-# Learning Local Control Barrier Functions for Safety Control of Hybrid Systems
-Preprint with supplementary material is available [here](https://arxiv.org/pdf/2401.14907.pdf).
+# Learning Local CBFs for Safety Control of Hybrid Systems
+Preprint with supplementary material is available [online](https://arxiv.org/pdf/2401.14907.pdf).
 
 ## Install
 The implementation has been tested with `Python 3.10` under `Ubuntu 22.04`. We recommend installing the simulation inside a virtualenv. You can install the environment by running:
@@ -23,13 +23,13 @@ docker build -t cbf_container -f Dockerfile .
 
 ## Reproduce the evaluation results
 
-#### Python path:
+#### Python path
 We run all experiments from the project directory so please add the project directory to the PYTHONPATH environment variable:
 ```
 export PYTHONPATH=$PYTHONPATH:$
 ```
 
-#### Evaluation
+#### Evaluation commands
 
 1. For the autnomous racing environment, please run from the project directory:
 ```
@@ -41,6 +41,9 @@ python3 scripts/racing/visualization.py
 ```
 You may change the method (`mpc`, `local_switch_unaware_cbf`, `local_switch_aware_cbf`, `global_cbf`) in the file `scripts/racing/evaluation_config.py`.
 The results will be saved under `results/racing_results/`.
+
+[<img src="docs/video_frontpage.JPG" width="600" height="430"
+/>](https://youtu.be/aHg0p6zyGFg)
 
 2. For the adaptive cruise control example, please run from the project directory:
 ```
@@ -54,7 +57,7 @@ You may also run `mpc.py` similarly and test the costs by running `cost.py` in t
 The trained model is saved in
 To reproduce the training, please run:
 ```bash
-python train/train_acc.py --experiment_name experiment_acc --tMax 0. --tMin -1.1 --num_src_samples 10000 --pretrain --pretrain_iters 5000 --num_epochs 60000 --counter_end 50000
+python3 train/train_acc.py --experiment_name experiment_acc --tMax 0. --tMin -1.1 --num_src_samples 10000 --pretrain --pretrain_iters 5000 --num_epochs 60000 --counter_end 50000
 ```
 
 ## Other issues:
