@@ -1,0 +1,4 @@
+file 'multi_friction_switch_aware.mp4'
+file 'multi_friction_mpc.mp4'
+file 'multi_friction_switch_unaware.mp4'
+file 'multi_friction_global_cbf.mp4'

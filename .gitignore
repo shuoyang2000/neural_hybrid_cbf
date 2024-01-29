@@ -1,0 +1,9 @@
+cbf_venv/
+build/
+gym/f110_gym.egg-info
+__pycache__
+*.pyc
+docs/_build/
+logs
+results/frames
+dataset
