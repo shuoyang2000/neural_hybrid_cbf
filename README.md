@@ -1,5 +1,5 @@
 # Learning Local Control Barrier Functions for Safety Control of Hybrid Systems
-Preprint with supplementary material is available [here](https://arxiv.org).
+Preprint with supplementary material is available [here](https://arxiv.org/pdf/2401.14907.pdf).
 
 ## Install
 The implementation has been tested with `Python 3.10` under `Ubuntu 22.04`. We recommend installing the simulation inside a virtualenv. You can install the environment by running:
